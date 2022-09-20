@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--el head es toda la info que necesita el navegador para correr tu sitio web-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primer proyecto</title>
+    <meta name="description" content="primer sitio web de mauromaster"/> <!--este tipo de etiquetas no se ven-->
+    <meta name="keywords" content="blog personal de mauricio"/> <!--sirven para dar mas información al navegador acerca de tu sitio web-->
+    <title>Mi primer sitio web</title>
 </head>
-
 <body>
- 
+     <!--aunque no genera cambios notables en tu documento, este tipo de tags sirven para decirle al navegador como está seccionado nuestra pagina -->
+    <header> <!--tag de seccion-->
+        <h1>BLOG DE MI PROGRESO</h1>
+
+    </header>
+    <nav> <!--tag de seccion-->
+        <ul>
+            <li>principal</li>
+            <li>progreso</li>
+            <li>contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <!--el tag hgroup me ayuda a organizar  mis tags de titulos por grupo, cada grupo tiene su jerarquia, asi no hay confusiones-->
+            <hgroup>
+                <h1>primer artículo</h1>
+                <h2>subtitulo de este articulo</h2>
+            </hgroup>
+            <time= datetime="20-09-2022">actualizado el 20-09-2022</time>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, odio! At maxime, tenetur a sequi labore dolorum non dignissimos voluptates. Harum fuga cupiditate odio impedit animi ducimus ad deleniti beatae!</p>
+            <footer>
+                <p>comentarios (2)</p>
+            </footer>
+            <img src="imagenes/descarga.png"/>
+            
+            <a href ="http://google.com" target="_blank">visita google</a>
+
+        </article>
+        <article>
+            <hgroup>
+                <h1>segundo articulo</h1>
+                <h2>subtitulo de este articulo</h2>
+            </hgroup>
+            <!--el tag time sirve para poner fechas dentro de los articulos de nuestra pagina, el atributo datetime especifica que se trata de una fecha-->
+            <time= datetime="20-09-2022">actualizado el 20-09-2022</time>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum et quo enim reiciendis tenetur perferendis amet commodi accusantium sunt id officiis numquam placeat cumque eaque, beatae quod eveniet aliquam unde.</p>
+            <footer>
+               <p>comentarios (1)</p> 
+            </footer>
+        </article>
+
+    </section>
+
+    <aside>
+    <p>mensaje 1</p>
+
+    <p>mensaje 2</p>
+
+    </aside>
+
+    <footer>
+        mi blog es creado en el 2022
+    </footer>
+
 </body>
 </html>
