@@ -8,44 +8,51 @@
     <meta name="description" content="primer sitio web de mauromaster"/> <!--este tipo de etiquetas no se ven-->
     <meta name="keywords" content="blog personal de mauricio"/> <!--sirven para dar mas información al navegador acerca de tu sitio web-->
     <title>Mi primer sitio web</title>
+    <!--el tag style sirve para dar estilos de una manera más general a cada section de la pagina (<style></style>)-->
+    <link rel="stylesheet" href="estyle.css"/> <!--enlaza nuestro doc. html con una hoja css externa-->
+
 </head>
 <body>
-     <!--aunque no genera cambios notables en tu documento, este tipo de tags sirven para decirle al navegador como está seccionado nuestra pagina -->
-    <header> <!--tag de seccion-->
+    <div class="agrupar">
+             <!--aunque no genera cambios notables en tu documento, este tipo de tags sirven para decirle al navegador como está seccionado nuestra pagina -->
+    <header id="cabecera1"> <!--tag de seccion--> <!--id para diferenciar cada elemento que gustemos-->
+        <div class="cabecera">
         <h1>BLOG DE MI PROGRESO</h1>
+        </div>
 
     </header>
-    <nav> <!--tag de seccion-->
+    <nav class="menu"> <!--tag de seccion-->
         <ul>
             <li>principal</li>
             <li>progreso</li>
             <li>contacto</li>
         </ul>
     </nav>
-    <section>
+    <section class="seccion">
         <article>
             <!--el tag hgroup me ayuda a organizar  mis tags de titulos por grupo, cada grupo tiene su jerarquia, asi no hay confusiones-->
             <hgroup>
                 <h1>primer artículo</h1>
                 <h2>subtitulo de este articulo</h2>
             </hgroup>
-            <time= datetime="20-09-2022">actualizado el 20-09-2022</time>
+            <time>actualizado 20-09-2022</time>
+            <img src="imagenes/descarga.png"/>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, odio! At maxime, tenetur a sequi labore dolorum non dignissimos voluptates. Harum fuga cupiditate odio impedit animi ducimus ad deleniti beatae!</p>
+            
             <footer>
                 <p>comentarios (2)</p>
             </footer>
-            <img src="imagenes/descarga.png"/>
-            
-            <a href ="http://google.com" target="_blank">visita google</a>
-
+            <a href ="http://google.com" target="_blank" class="enlace">visita google</a>
+           
         </article>
+        
         <article>
             <hgroup>
                 <h1>segundo articulo</h1>
                 <h2>subtitulo de este articulo</h2>
             </hgroup>
             <!--el tag time sirve para poner fechas dentro de los articulos de nuestra pagina, el atributo datetime especifica que se trata de una fecha-->
-            <time= datetime="20-09-2022">actualizado el 20-09-2022</time>
+            <time>actualizado 20-09-2022</time>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum et quo enim reiciendis tenetur perferendis amet commodi accusantium sunt id officiis numquam placeat cumque eaque, beatae quod eveniet aliquam unde.</p>
             <footer>
                <p>comentarios (1)</p> 
@@ -54,16 +61,18 @@
 
     </section>
 
-    <aside>
-    <p>mensaje 1</p>
+    <aside class="columna">
+    <blockquote>mensaje 1</blockquote>
 
-    <p>mensaje 2</p>
+    <blockquote>mensaje 2</blockquote>
 
     </aside>
 
-    <footer>
-        mi blog es creado en el 2022
+    <footer class="pie">
+        Creado en Septiembre de 2022
     </footer>
+    </div>
+
 
 </body>
 </html>
